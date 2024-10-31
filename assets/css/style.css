@@ -281,6 +281,27 @@ header .menu {
   font-weight: 400;
 }
 
+/*CTA*/
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  text-align: center;
+}
+
+.cta .texts .btn-yellow {
+  margin-top: 40px;
+}
+
+.cta img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
 @media only screen and (min-width: 600px) {
   header {
     height: 100px;
@@ -340,6 +361,15 @@ header .menu {
 
   .testimonial .texts {
     width: 100%;
+  }
+
+  .cta {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cta .texts {
+    width: 80%;
   }
 }
 
@@ -423,6 +453,25 @@ header .menu {
     flex-basis: 30%;
   }
 
+  .cta {
+    padding: 60px 20px;
+    flex-direction: row;
+    text-align: left!important;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cta .h1 {
+    text-align: left;
+  }
+
+  .cta .texts {
+    width: 40%;
+  }
+
+  .cta img {
+    flex: 1;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
