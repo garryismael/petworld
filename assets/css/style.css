@@ -66,6 +66,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--off-white);
   color: var(--dark);
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -255,15 +256,15 @@ header .menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 405px;
-  height: 405px;
+  width: 100%;
+  height: auto;
   background: #bcbcbc;
   clip-path: ellipse(40% 50% at 50% 50%);
 }
 
 .testimonial .img-avatar img {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: auto;
   clip-path: ellipse(40% 50% at 50% 50%);
 }
 
@@ -328,13 +329,16 @@ header .menu {
   }
 
   .testimonial .img-avatar {
-    width: 405px;
-    height: 405px;
     clip-path: ellipse(40% 50% at 50% 50%);
+    flex-basis: 50%;
   }
 
   .testimonial .img-avatar img {
     clip-path: ellipse(40% 50% at 50% 50%);
+  }
+
+  .testimonial .texts {
+    width: 100%;
   }
 }
 
@@ -413,6 +417,11 @@ header .menu {
   .services {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
+
+  .testimonial .img-avatar {
+    flex-basis: 30%;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
