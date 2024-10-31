@@ -237,8 +237,8 @@ header .menu {
 /*Testimonial*/
 
 .testimonial-wrapper {
-    padding: 27px 0;
-    background: var(--light-purple);
+  padding: 27px 0;
+  background: var(--light-purple);
 }
 
 .testimonial {
@@ -257,7 +257,7 @@ header .menu {
   justify-content: center;
   width: 405px;
   height: 405px;
-  background: #BCBCBC;
+  background: #bcbcbc;
   clip-path: ellipse(40% 50% at 50% 50%);
 }
 
@@ -274,9 +274,9 @@ header .menu {
   flex-basis: 40%;
 }
 
-.testimonial .paragraph .user{
-    padding-top: 40px;
-    font-weight: 400;
+.testimonial .paragraph .user {
+  padding-top: 40px;
+  font-weight: 400;
 }
 
 @media only screen and (min-width: 600px) {
@@ -332,7 +332,7 @@ header .menu {
     height: 405px;
     clip-path: ellipse(40% 50% at 50% 50%);
   }
-  
+
   .testimonial .img-avatar img {
     clip-path: ellipse(40% 50% at 50% 50%);
   }
@@ -381,6 +381,16 @@ header .menu {
     border-radius: 6px;
   }
 
+  .sponsors {
+    gap: 100px;
+  }
+
+  .sponsors img {
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
+  }
+
   .video .content {
     margin: 0 auto;
     width: 765px;
@@ -398,8 +408,7 @@ header .menu {
 
   .testimonial-wrapper {
     padding: 50px 0;
-}
-
+  }
 
   .services {
     grid-template-columns: repeat(4, minmax(0, 1fr));
